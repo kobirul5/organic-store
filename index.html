@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- googl font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            
+        }
+    </style>
+    <!-- googl font end -->
+     <!-- font awsome  -->
+     <script src="https://kit.fontawesome.com/0301225de3.js" crossorigin="anonymous"></script>
+     <!-- DaisyUI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'banner-bg': '#F9F7F4',
+                'primary': '#8BC34A',
+                'dark': '#1F2937',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="poppins">
+    <header>
+        <nav class="container mx-auto px-4">
+            <div class="navbar">
+                <div class="navbar-start">
+                  <a href="#" class=""><img class="w-40" src="./images/logo.svg" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 font-semibold text-xl">
+                    <li><a class="hover:text-primary transition-colors duration-300 ease-in-out">Home</a></li>
+                    <li><a class="hover:text-primary transition-colors duration-300 ease-in-out">Everything</a></li>
+                    <li><a class="hover:text-primary transition-colors duration-300 ease-in-out">Groceries</a></li>
+                    <li><a class="hover:text-primary transition-colors duration-300 ease-in-out">About</a></li>
+                    <li><a class="hover:text-primary transition-colors duration-300 ease-in-out">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end gap-4">
+                  <a href="#">$10.00 <i class="fa-solid fa-cart-shopping"></i></a>
+                  <a href="#"><i class="fa-solid fa-user"></i></a>
+                  <div class="dropdown ">
+                    <div tabindex="0" role="button" class="btn bg-primary lg:hidden">
+                      <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                      <li><a>Home</a></li>
+                      <li><a>Everything</a></li>
+                      <li><a>Groceries</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </nav>
+        <!-- benner section start  -->
+         <section class="bg-banner-bg">
+            <div class="bg bg-[url('./images/leaf01.png')] bg-no-repeat h-[500px]">
+
+            </div>
+         </section>
+    </header>
+</body>
+</html>
